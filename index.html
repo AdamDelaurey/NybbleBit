@@ -42,22 +42,6 @@
         .section h2 {
             margin-bottom: 20px;
         }
-        .grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .card {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 300px;
-            text-align: left;
-        }
-        .card h3 {
-            margin: 0 0 10px;
-        }
         footer {
             background: #222;
             color: #fff;
@@ -88,22 +72,37 @@
 
     <section class="section" id="events">
         <h2>What’s Happening Now?</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Concert: Band XYZ</h3>
-                <p>Date: Dec 15, 2024</p>
-                <p>Location: Downtown Arena</p>
-                <p>Price: $50 - $150</p>
-                <a href="#" class="cta-button">Get Tickets</a>
-            </div>
-            <div class="card">
-                <h3>Theater: Classic Play</h3>
-                <p>Date: Jan 20, 2025</p>
-                <p>Location: City Theater</p>
-                <p>Price: $30 - $90</p>
-                <a href="#" class="cta-button">Get Tickets</a>
-            </div>
-            <!-- Add more events as needed -->
+        <!-- Ticketmaster Event Discovery Widget -->
+        <div w-type="event-discovery" 
+             w-tmapikey="IPvlGG6wAEsAPLTSf7hyApABC4WKAGnD" 
+             w-googleapikey="YOUR_GOOGLE_API_KEY" 
+             w-keyword="" 
+             w-theme="simple" 
+             w-colorscheme="light" 
+             w-width="350" 
+             w-height="600" 
+             w-size="25" 
+             w-border="0" 
+             w-borderradius="4" 
+             w-postalcode="" 
+             w-radius="25" 
+             w-city="" 
+             w-period="day" 
+             w-layout="vertical" 
+             w-attractionid="" 
+             w-promoterid="" 
+             w-venueid="" 
+             w-status="onsale,offsale,rescheduled,postponed" 
+             w-affiliateid="" 
+             w-segmentid="" 
+             w-proportion="custom" 
+             w-titlelink="off" 
+             w-sorting="groupByName" 
+             w-id="id_u8m98c" 
+             w-countrycode="GB" 
+             w-source="ticketmaster" 
+             w-branding="Ticketmaster" 
+             w-latlong="">
         </div>
     </section>
 
@@ -120,5 +119,8 @@
             <a href="#">Terms of Service</a>
         </p>
     </footer>
+
+    <!-- Ticketmaster Widget JavaScript -->
+    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
 </body>
 </html>
